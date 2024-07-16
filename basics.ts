@@ -187,3 +187,11 @@ function toRecord<T,g>(id: T, value: g){
 
 const result = toRecord<number,string>(123, 'my@email.com');
 const result2 = toRecord<string, number[]>('e021', [1,2,3]);
+
+function randomElement<T>(arr: T[]){
+    const index = Math.random()*arr.length;
+    return arr[index]
+}
+
+const r1 = randomElement<number>([1,2,3]);
+const r2 = randomElement<string>(['a','b','c']);

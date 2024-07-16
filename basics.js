@@ -160,3 +160,9 @@ function toRecord(id, value) {
 }
 var result = toRecord(123, 'my@email.com');
 var result2 = toRecord('e021', [1, 2, 3]);
+function randomElement(arr) {
+    var index = Math.random() * arr.length;
+    return arr[index];
+}
+var r1 = randomElement([1, 2, 3]);
+var r2 = randomElement(['a', 'b', 'c']);
