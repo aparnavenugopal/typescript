@@ -39,4 +39,36 @@ formatCar({
     year: 2015,
     make:'ford',
     model: 'mustang',
-})
+});
+
+interface Pen {
+    model: string;
+    year: number;
+    setYear: (nextYear: number) => void;
+    setModel: (nextModel: string) => void;
+    getDescription:() => string;
+}
+
+interface Pencil extends Pen {
+    color: 'black';
+}
+
+
+const hp: Pen = {
+   model: 'hp',
+   year: 2015,
+   setYear(nextYear: number){
+    this.year = nextYear;
+   },
+   setModel(nextModel: string){
+    this.model = nextModel
+   },
+   getDescription(){
+    return `year: ${this.year} , model: ${this.model}`
+   }
+};
+
+// const apsara: Pen ={
+//     model: 'apsara',
+//     year: 2010
+// }

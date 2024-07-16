@@ -26,3 +26,20 @@ formatCar({
     make: 'ford',
     model: 'mustang',
 });
+var hp = {
+    model: 'hp',
+    year: 2015,
+    setYear: function (nextYear) {
+        this.year = nextYear;
+    },
+    setModel: function (nextModel) {
+        this.model = nextModel;
+    },
+    getDescription: function () {
+        return "year: ".concat(this.year, " , model: ").concat(this.model);
+    }
+};
+// const apsara: Pen ={
+//     model: 'apsara',
+//     year: 2010
+// }
